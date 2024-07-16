@@ -1,1 +1,14 @@
 // ваш код
+.surf {
+  padding: 160px 0 210px;
+  background-image: url(../../img/surf-bg.png);
+  // background-image: url(../../img/111.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.surf__subtitle {
+  text-align: right;
+  padding-right: 80px;
+  margin-top: -86px;
+}

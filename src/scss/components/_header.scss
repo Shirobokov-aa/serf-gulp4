@@ -22,7 +22,6 @@ header {
   right: 116px;
   bottom: 116px;
   text-align: right;
-  color: white;
 }
 
 .slider-item__info-suptitle {
@@ -70,7 +69,6 @@ header {
   bottom: 36px;
   max-width: 920px;
   width: 100%;
-  color: white;
   // transform-style: flat;
   .slick-current {
     .dots-box {
@@ -78,17 +76,10 @@ header {
     }
   }
 }
-.slick-list {
-  // transform-style: flat;
-}
+
 .slick-track {
   transform: none !important;
 }
-// .slick-slider {
-//   position: absolute;
-// }
-
-// один час видео https://www.youtube.com/watch?v=TisGtkOPh24
 
 .dots-box {
   width: 200px;
@@ -96,7 +87,6 @@ header {
   justify-content: space-between;
   height: 28px;
   align-items: center;
-  border-top: 4px solid #fff;
   padding-top: 6px;
   &__number {
     font-size: 24px;
@@ -106,6 +96,7 @@ header {
   &__name {
     font-weight: 300;
     line-height: 19px;
+    text-transform: capitalize;
   }
 }
 
@@ -121,8 +112,6 @@ header {
 }
 
 .header__title {
-  color: rgb(255, 255, 255);
-  font-family: Fira Sans;
   font-size: 200px;
   font-weight: 800;
   line-height: 156px;
@@ -141,7 +130,6 @@ header {
   padding-top: 40px;
   &__list {
     a {
-      color: #fff;
       span {
         padding-top: 15px;
         display: block;
@@ -151,6 +139,7 @@ header {
         letter-spacing: 3px;
         padding-top: 6px;
         margin-bottom: 20px;
+        text-transform: capitalize;
       }
     }
   }
@@ -183,7 +172,8 @@ header {
   letter-spacing: 1.05px;
   padding-left: 19px;
   position: relative;
-  &::before{
+  text-transform: capitalize;
+  &::before {
     content: "";
     position: absolute;
     width: 11px;
@@ -191,33 +181,31 @@ header {
     background-image: url(../../img/marker.svg);
     left: 0;
     top: 0;
-
   }
 }
 
-.header__map{
+.header__map {
   position: absolute;
   right: -3%;
   top: -85%;
   z-index: 3;
 }
 
-.header__arrows{
+.header__arrows {
   position: absolute;
   left: 210px;
   bottom: 40px;
   z-index: 3;
-
 }
 
-.line-animation{
+.line-animation {
   stroke-dashoffset: 600;
   stroke-dasharray: 600;
   animation: animdash 5s infinite 6s;
 }
 
-@keyframes animdash{
-  to{
+@keyframes animdash {
+  to {
     stroke-dashoffset: 0;
   }
 }
