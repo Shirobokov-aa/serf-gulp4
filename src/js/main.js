@@ -46,7 +46,7 @@ $(function () {
 
   // ++++++++++++++++++++++++
   jQuery(
-    '<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>'
+    '<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="../img/plus.svg" alt="" /></div><div class="quantity-button quantity-down"><img src="../img/minus.svg" alt="" /></div></div>'
   ).insertAfter(".quantity input");
   jQuery(".quantity").each(function () {
     var spinner = jQuery(this),
@@ -78,4 +78,18 @@ $(function () {
       spinner.find("input").trigger("change");
     });
   });
+
+  $(".quantity-button").on("click", function () {
+    let summ =
+      $(".nights").val() * $(".summ").data("nights") +
+      ($(".guests").val() - 1) * $(".summ").data("guests");
+
+    $(".summ").html("$" + summ);
+  });
+
+  let summ =
+    $(".nights").val() * $(".summ").data("nights") +
+    ($(".guests").val() - 1) * $(".summ").data("guests");
+
+  $(".summ").html("$" + summ);
 });

@@ -263,6 +263,13 @@
 
 .holder {
   background-image: url(../../img/travel-bg.png);
+  &.sleep {
+    background-image: url(../../img/frangipani.png);
+    background-position: bottom 250px right -160px;
+    .holder-slider__descr {
+      background-size: contain;
+    }
+  }
   background-position: bottom -85px right -270px;
   background-repeat: no-repeat;
   .slider-arrows {
@@ -285,7 +292,11 @@
     margin-top: -230px;
     .descr__head {
       position: relative;
-      padding-right: 280px;
+      padding-right: 70px;
+      &.descr__head-sleep {
+        padding-right: 280px;
+      }
+
       // padding-right: 215px;
       img {
         position: absolute;
@@ -296,11 +307,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        li {
-          display: inline-block;
-          // margin-left: -25px;
-          margin-left: -40px;
-        }
+
         img {
           position: static;
         }
@@ -354,6 +361,7 @@
   letter-spacing: 0px;
   padding-left: 44px;
   position: relative;
+
   .holder-pricing__span {
     position: absolute;
     font-size: 14px;
@@ -365,3 +373,5 @@
     right: 0;
   }
 }
+
+// 1.32
