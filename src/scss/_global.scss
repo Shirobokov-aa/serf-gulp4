@@ -233,7 +233,14 @@ input[type="number"] {
 .star-list {
   li {
     display: inline-block;
-    // margin-left: -25px;
     margin-left: -40px;
   }
 }
+.shop__slider-price .shop__star-list {
+  margin-left: 15px;
+  li {
+    margin-left: -25px;
+  }
+}
+
+
